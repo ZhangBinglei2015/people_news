@@ -1,0 +1,108 @@
+/**
+ * Created by yhj on 2015/3/2.
+ */
+/*今日收益概览 标题*/
+.m_todayIncome_title{padding-top:7px;}
+.m_todayIncome_title>span{float:left;width:133px;text-align:right;line-height:25px;}
+.m_todayIncome_title .income_opened .num span{width:17px;height:22px;padding-top:0;}
+.m_todayIncome_title .income_opened .num{width:17px;height:25px;line-height:25px;}
+.m_todayIncome_title .income_opened{font-size:17px;margin-left:140px;}
+
+/* 今日收益概览图标 */
+.m_todayIncome_canvas{width:100%;height:225px;background:#fff;margin-top:15px;}
+
+/* 今日收益概览 按钮区域 */
+.m_todayIncome_btns{padding:23px 32px 26px;}
+.m_todayIncome_btns a{width:58px;}
+.m_todayIncome_btns a:nth-child(2){margin:0 30px;}
+.m_todayIncome_btns a span{bottom:-24px;}
+
+
+/* 今日收益概览个人信息 */
+.m_todayIncome_info{border-top:1px rgba(89,89,99,0.6) solid;margin-top:10px;}
+.m_todayIncome_info .info_title{padding:14px 15px 0 13px;}
+.m_todayIncome_info .info_title>a{float:right;color:#de3a63;font-size:13px;text-decoration:none;}
+.m_todayIncome_info .info_user{padding:18px 14px 0;}
+.m_todayIncome_info .info_user li:nth-child(1){float:left;}
+.m_todayIncome_info .info_user li:nth-child(1) img{width:61px;height:61px;}
+.m_todayIncome_info .info_user li:nth-child(2){margin:0 0 0 78px;}
+.m_todayIncome_info .info_user li:nth-child(2) .info_user_name{color:#fff;font-size:14px;line-height:30px;padding-left:2px;}
+
+/*.m_todayIncome_info .info_user li:nth-child(3){width:90px;padding-top:6px;line-height:26px;}*/
+.m_todayIncome_info .info_user li:nth-child(2) span{/*float:left;line-height:26px;*/}
+.m_todayIncome_info .info_user li:nth-child(2) .m_numUser{line-height:26px;}
+.m_todayIncome_info .info_user li:nth-child(2) .m_numUser span.rank_now{font-size:30px;margin-left:5px;color:#fff;}
+/*.m_todayIncome_info .info_user li:nth-child(3) span.rank_change{font-size:20px;padding:0 2px 0 14px;background:url(../images/arrow.png) left center no-repeat;background-size:10px auto;}*/
+
+.info_user_income .income_opened .num span{width:14px;height:18px;padding-top:0;}
+.info_user_income .income_opened .num{width:14px;height:21px;line-height:21px;}
+.info_user_income .income_opened{font-size:14px;margin-left:0;}
+
+/* incomeDetail */
+
+.m_income_detail_head{margin: 0 14px;}
+.m_income_detail_head .m_card{margin:0 14px 14px;}
+.m_income_detail_btnWarp{text-align:center;padding:13px 0 0;height:65px;margin:0 14px;border-bottom:1px #363642 solid;}
+.m_income_detail_btnWarp a{color:#de3a63;font-size:13px;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;-webkit-user-select:none;position:relative;top:-5px;}
+.m_income_detail_btnWarp a img{margin:0 auto;}
+.m_income_detail_btnWarp a span{width:80px;left:-20px;}
+
+.m_income_detail_contentWarp{}
+.m_income_detail_contentWarp>li>h3{border-bottom:1px #363642 solid;margin:0 14px;height:24px;line-height:24px;color:#fff;font-size:15px;font-weight:normal;}
+.m_income_detail_contentWarp>li:nth-child(1)>h3{margin-top:10px;border-top:none;}
+
+.c_bottom_line{height:1px;background:#363642;margin:0 14px;overflow:hidden;}
+.detail_onTime{position:relative;padding:5px 30px 5px 50px;box-sizing:border-box;overflow:hidden;}
+.detail_onTime.hasOnce{overflow:visible;}
+h3.hasOnce{background:url(../images/pointer.png) 15px center no-repeat;padding-left:40px;background-size:12px 12px;}
+.detail_onTime.active{background:rgba(255,255,255,0.08);overflow:hidden;}
+.detail_onTime>.line{position:absolute;top:0;left:32px;bottom:0;width:1px;background:#8b8b9c;overflow:hidden;}
+.detail_onTime>span.c_circle{position:absolute;left:25px;top:50%;-webkit-transform:translateY(-50%);}
+.detail_onTime>i.top{
+    position:absolute;width:1px;height:15px;top:0;left:32px;
+    background:-webkit-gradient(linear, 0 0, 0 100%, from(rgba(46,46,58,1)), color-stop(0.3, rgba(46,46,58,1)), to(rgba(46,46,58,0)));
+}
+.detail_onTime>i.bottom{
+    position:absolute;width:1px;height:15px;bottom:0;left:32px;
+    background:-webkit-gradient(linear, 0 0, 0 100%, from(rgba(46,46,58,0)), color-stop(0.7, rgba(46,46,58,1)), to(rgba(46,46,58,1)));
+}
+
+.detail_onTime  .c_arrow{display:block;position:absolute;width:30px;height:100%;right:0;top:0;z-index:10;background:url(../images/arrow_p.png) 11px center no-repeat;background-size:8px auto;}
+
+.detail_onTime.hasOnce .c_detail_word{margin:0;}
+.detail_onTime .c_detail_word{margin:5px 0;position:relative;}
+/*.detail_onTime.hasOnce .c_detail_word span{top:-14px;}*/
+.detail_onTime .c_detail_word span{position:absolute;right:0;top:0;height:100%;color:#fff;font-size:25px;display: -webkit-box;line-height:1;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;}
+.detail_onTime.hasOnce .c_detail_word strong{margin-right:60px;}
+.detail_onTime .c_detail_word strong{font-size:13px;color:#bdbdbd;line-height:25px;font-weight:normal;margin-right:80px;display:block;}
+
+.J_one i{display:inline-block;width:18px;text-align:center;margin:0 1px;background:#7c4dff;color:#2e2e3a;border-radius:3px;}
+.J_two i{display:inline-block;width:18px;text-align:center;margin:0 1px;color:#7c4dff;border:1px #7c4dff solid;border-radius:3px;box-sizing:border-box;}
+
+
+/* 收益详情 MASK */
+.m_mask.show{-webkit-transform:translate3d(0, 0, 0) scale(1);}
+.m_mask .detail_warp{position:absolute;left:15px;right:15px;top:50%;background:#c3c3d0;border-radius:10px;font-size:12px;padding:20px 0 0 0;-webkit-transform: translate3d(0, -50%, 0);}
+/*.m_mask .detail_warp var{color:#5cdd4a;}*/
+.m_mask ul.detail{margin:0 25px;padding-left:16px;border-left:1px #727282 solid;}
+.m_mask ul.detail li{padding:3px 0 27px;position:relative;}
+.m_mask ul.detail li>i.pointer{position:absolute;left:-20px;top:8px;width:8px;height:8px;background:url(../images/pointer.png) no-repeat;background-size:100% auto;z-index:1;}
+.m_mask ul.detail li:nth-child(1)>i.pointer{top:0;height:16px;background:#c3c3d0 url(../images/pointer.png) center bottom no-repeat;background-size:100% auto;z-index:1;}
+.m_mask ul.detail li h3{color:#2e2e3a;font-size:15px;margin-bottom:11px;}
+.m_mask ul.detail li div{overflow:hidden;font-size:13px;color:#2e2e3a;}
+.m_mask ul.detail li>span{float:right;color:#2e2e3a;font-size:20px;margin-top:10px;font-weight:bold;}
+
+
+
+/* 任务重做 */
+.timer{display:none;color:#de3a63;line-height:22px;position:relative;top:6px;}
+
+/* noData */
+.m_incomeNodata.noData{
+    position:absolute;height:100%;width:100%;
+    background:none;
+}
+

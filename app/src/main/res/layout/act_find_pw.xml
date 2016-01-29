@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <com.jsonhu.people_news.widget.TopBarView
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.jsonhu.people_news.widget.TopBarView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/line_bg"></View>
+    <com.jsonhu.people_news.widget.InputView
+        android:layout_marginTop="@dimen/large_large"
+        android:id="@+id/input_user"
+        android:layout_marginLeft="@dimen/large_large"
+        android:layout_marginRight="@dimen/large_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.jsonhu.people_news.widget.InputView>
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_space80"
+        android:layout_margin="@dimen/large_large"
+        android:background="@drawable/btn_disable"
+        android:text="下一步"
+        android:textColor="@color/gray"/>
+</LinearLayout>

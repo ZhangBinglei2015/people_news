@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/tab_item_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:background="@color/white"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tab_button_0"
+            style="@style/main_tab_bottom"
+            android:background="@color/transparent"
+            android:clickable="false"
+            android:text="首页" />
+
+        <Button
+            android:id="@+id/tab_button_1"
+            style="@style/main_tab_bottom"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:clickable="false"
+            android:text="政务" />
+
+            <Button
+                android:id="@+id/tab_button_2"
+                style="@style/main_tab_bottom"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:clickable="false"
+                android:text="我的" />
+
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1.1dp"
+        android:layout_above="@+id/tab_item_container"/>
+
+    <FrameLayout
+        android:id="@+id/lay_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_line"
+        android:orientation="vertical">
+
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#f6f6f6"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_corners_edit_search"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/icon_search"
+                />
+
+            <TextView
+                android:gravity="center_vertical"
+                android:text="寒潮"
+                android:textSize="14sp"
+                android:textColor="#c7c7cd"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="30dp" />
+
+            <View
+                android:layout_margin="5dp"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#d9d9d9"
+                ></View>
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/icon_speech"
+                />
+
+        </LinearLayout>
+
+</FrameLayout>

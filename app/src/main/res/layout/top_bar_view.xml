@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+                android:background="@color/white"
+    android:layout_height="48.0dip" >
+
+    <LinearLayout
+        android:id="@+id/top_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/btn_back"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="@dimen/textSize_18"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/top_right_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10.0dip"
+        android:text="编辑"
+        android:visibility="gone"
+        android:clickable="true"
+        android:textColor="@color/imoocstyle"
+        android:paddingTop="@dimen/middle"
+        android:paddingBottom="@dimen/large_large"
+        android:textSize="15dip" />
+</RelativeLayout>

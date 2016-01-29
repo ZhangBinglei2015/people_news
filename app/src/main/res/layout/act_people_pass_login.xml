@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <com.jsonhu.people_news.widget.TopBarView
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.jsonhu.people_news.widget.TopBarView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/line_bg"></View>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large_large"
+        android:layout_marginLeft="@dimen/large_large"
+        android:layout_marginRight="@dimen/large_large"
+        android:src="@mipmap/login_background"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/large_large"
+        android:layout_marginRight="@dimen/large_large"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.jsonhu.people_news.widget.InputView
+            android:layout_marginTop="@dimen/large_large"
+            android:id="@+id/input_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.jsonhu.people_news.widget.InputView>
+        <com.jsonhu.people_news.widget.InputView
+            android:layout_marginTop="@dimen/large_large"
+            android:id="@+id/input_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.jsonhu.people_news.widget.InputView>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_margin="@dimen/large_large"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_space80"
+        android:text="登录"
+        android:textColor="@color/gray"
+        android:background="@drawable/btn_disable"/>
+</LinearLayout>

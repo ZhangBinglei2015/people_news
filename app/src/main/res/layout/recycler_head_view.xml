@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/recycler_head_view_search"></include>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/head_viewPager"
+            ></android.support.v4.view.ViewPager>
+
+        <TextView
+            android:id="@+id/tv_viewpager_img_number"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/main_tab_paging"
+            android:textColor="#ffffff"
+            android:text="2/9"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:padding="2dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:background="#1f000000"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_viewpager_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

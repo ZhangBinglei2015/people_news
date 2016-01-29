@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/input_bg">
+
+        <ImageView
+            android:id="@+id/iv_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/middle"/>
+
+        <!--<View-->
+        <!--android:layout_width="0.2dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_toRightOf="@+id/user_accountIv"-->
+        <!--android:background="@color/line_bg"></View>-->
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/large"
+            android:layout_toRightOf="@+id/iv_input"
+            android:background="@null"
+            android:hint=""
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:textSize="@dimen/textSize_16"/>
+    <ImageView
+        android:id="@+id/iv_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/middle"
+        android:background="@mipmap/btn_delete"/>
+    <RelativeLayout
+        android:id="@+id/rel_vis"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/btn_hide_nor"/>
+        <TextView
+            android:id="@+id/is_vis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="显示"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

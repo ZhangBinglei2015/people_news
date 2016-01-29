@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+<<<<<<< HEAD
+      <module fileurl="file://$PROJECT_DIR$/Peoplenews.iml" filepath="$PROJECT_DIR$/Peoplenews.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/People_news.iml" filepath="$PROJECT_DIR$/People_news.iml" />
+>>>>>>> dc17ab058bad15fd729c8aa5e6b29ff027b7a737
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/social_sdk_library_project/social_sdk_library_project.iml" filepath="$PROJECT_DIR$/social_sdk_library_project/social_sdk_library_project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sweet_library/sweet_library.iml" filepath="$PROJECT_DIR$/sweet_library/sweet_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xrecyclerview/xrecyclerview.iml" filepath="$PROJECT_DIR$/xrecyclerview/xrecyclerview.iml" />
+    </modules>
+  </component>
+</project>

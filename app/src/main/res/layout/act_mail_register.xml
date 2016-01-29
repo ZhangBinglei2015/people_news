@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.jsonhu.people_news.widget.TopBarView
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.jsonhu.people_news.widget.TopBarView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/line_bg"></View>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/large_large"
+        android:layout_marginRight="@dimen/large_large"
+        android:orientation="vertical">
+        <com.jsonhu.people_news.widget.InputView
+            android:layout_marginTop="@dimen/large_large"
+            android:id="@+id/input_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.jsonhu.people_news.widget.InputView>
+        <com.jsonhu.people_news.widget.InputView
+            android:layout_marginTop="@dimen/large_large"
+            android:id="@+id/input_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.jsonhu.people_news.widget.InputView>
+        <!--<ImageView-->
+        <!--android:id="@+id/imageView1"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="@dimen/line_space2"-->
+        <!--android:background="@color/line" />-->
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/large_large"
+        android:layout_marginTop="@dimen/middle"
+        android:gravity="center_vertical" >
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/tv_agree"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/checkBox"
+            android:hint="已阅读并同意用户协议"/>
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_space80"
+        android:layout_margin="@dimen/large_large"
+        android:background="@drawable/btn_disable"
+        android:text="注册"
+        android:textColor="@color/gray"/>
+
+    <TextView
+        android:id="@+id/phone_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/large_large"
+        android:layout_marginTop="@dimen/middle"
+        android:clickable="true"
+        android:gravity="right"
+        android:text="手机注册"
+        android:textColor="@color/text_blue"/>
+
+</LinearLayout>

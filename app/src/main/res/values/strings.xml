@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">People_news</string>
+    <string name="back_more_quit">再按一次退出人民日报</string>
+
+    <string name="long_text">在Android的设计过程中，为了适配不同的手机分辨率，图片大多需要拉伸或者压缩，这样就出现了可以任意调整大小的一种图片格式“.9.png”。这种图片是用于Android开发的一种特殊的图片格式，它的好处在于可以用简单的方式把一张图片中哪些区域可以拉伸，哪些区域不可以拉伸设定好，同时可以把显示内容区域的位置标示清楚。
+本文结合一些具体的例子来看下.9.png的具体用法。</string>
+
+    <string name="short_text">中华人民共和国</string>
+</resources>

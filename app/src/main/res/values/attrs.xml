@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="navigate_left">
+
+        <item>闻</item>
+        <item>评</item>
+        <item>问</item>
+        <item>听</item>
+        <item>报</item>
+        <item>帮</item>
+        <item>图</item>
+       <item>视</item>
+        <item>财</item>
+        <item>社</item>
+        <item>文</item>
+        <item>健</item>
+        <item>教</item>
+    </string-array>
+    <string-array name="navigate_right">
+
+        <item>热点</item>
+        <item>锐度</item>
+        <item>问政</item>
+        <item>播报</item>
+        <item>版面</item>
+        <item>公益</item>
+        <item>镜头</item>
+        <item>影像</item>
+        <item>财经</item>
+        <item>社会</item>
+        <item>健康</item>
+        <item>教育</item>
+    </string-array>
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer"/>
+        <attr name="animDuration" format="integer"/>
+        <attr name="animAlphaStart" format="float"/>
+        <attr name="expandDrawable" format="reference"/>
+        <attr name="collapseDrawable" format="reference"/>
+    </declare-styleable>
+
+
+</resources>

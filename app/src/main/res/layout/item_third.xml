@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <TextureView
+            android:background="@android:color/black"
+            android:id="@+id/texture_view_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBar"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_gravity="center"
+            />
+
+        <FrameLayout
+            android:id="@+id/fl_video_playbutton_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/iv_list_vedio_default"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/pic_default" />
+
+            <ImageButton
+                android:id="@+id/iv_button_list_vedioplay"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/play" />
+
+        </FrameLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_video_list_controller"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#d4111111"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:id="@+id/iv_video_play_and_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/video_list_play"
+                android:layout_marginLeft="10dp"
+                />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/seekbar_view_list"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv_video_full_screen"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/video_list_full_screen"
+                />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:text="驻福建31军在东南沿海举行登陆演习"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_clock"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/video_list_clock"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="02:16"
+            android:layout_toRightOf="@id/iv_clock"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_vedio_list_collect"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/bottom_down_collect_new"
+            android:layout_alignParentRight="true"
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_vedio_list_share"
+            android:layout_marginRight="5dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/video_list_share"
+            android:layout_toLeftOf="@id/iv_vedio_list_collect"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

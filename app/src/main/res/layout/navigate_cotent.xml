@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<LinearLayout  android:id="@+id/navigate_content_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp"
+    android:layout_margin="@dimen/middle"
+    android:background="@drawable/subscribe_item_bg"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true">
+    <TextView
+        android:id="@+id/navigate_content_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:text="闻"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/view" />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:id="@+id/view"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/navigate_content_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="热点"
+        android:textSize="8dp"
+        android:ems="1"
+        android:maxLines="3"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/view" />
+
+    </LinearLayout>
+
+<!--    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/del_imageView"
+        android:background="@mipmap/custom_channel_delete"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />-->
+    <!--<ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/custom_channel_delete"
+        android:id="@+id/imageView"
+        android:layout_alignTop="@+id/navigate_content_view"
+        android:layout_toEndOf="@+id/navigate_content_view" />-->
+</RelativeLayout>

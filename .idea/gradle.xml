@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+<<<<<<< HEAD
+        <option name="gradleJvm" value="1.8" />
+=======
+        <option name="gradleHome" value="E:\android_studio_1.5\android-studio\gradle\gradle-2.8" />
+        <option name="gradleJvm" value="1.7" />
+>>>>>>> dc17ab058bad15fd729c8aa5e6b29ff027b7a737
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/social_sdk_library_project" />
+<<<<<<< HEAD
+=======
+            <option value="$PROJECT_DIR$/sweet_library" />
+            <option value="$PROJECT_DIR$/xrecyclerview" />
+>>>>>>> dc17ab058bad15fd729c8aa5e6b29ff027b7a737
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

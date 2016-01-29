@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.jsonhu.people_news.widget.TopBarView
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.jsonhu.people_news.widget.TopBarView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/line_bg"></View>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/large"
+                android:layout_marginRight="@dimen/large"
+                android:layout_marginTop="60dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rel_people_login"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/iv10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/login_people"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv10"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/middle"
+                        android:text="人名网通行证"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_qq_login"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/iv11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/login_qq_icon"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv11"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/middle"
+                        android:text="QQ"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_wx_login"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/iv12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/login_wx"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv12"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/middle"
+                        android:text="微信"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_sina_login"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/iv13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/login_weibo"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv13"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/middle"
+                        android:text="新浪微博"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="@dimen/large_large"
+                android:background="@color/line_bg"></View>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/large_large"
+                android:layout_marginRight="@dimen/large_large"
+                android:orientation="vertical">
+
+                <com.jsonhu.people_news.widget.InputView
+                    android:layout_marginTop="@dimen/large_large"
+                    android:id="@+id/input_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.jsonhu.people_news.widget.InputView>
+                <com.jsonhu.people_news.widget.InputView
+                    android:layout_marginTop="@dimen/large_large"
+                    android:id="@+id/input_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.jsonhu.people_news.widget.InputView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/find_psw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/large_large"
+                android:layout_marginTop="@dimen/middle"
+                android:clickable="true"
+                android:gravity="right"
+                android:text="密码找回"/>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_space80"
+                android:layout_margin="@dimen/large_large"
+                android:background="@drawable/btn_disable"
+                android:text="登录"
+                android:textColor="@color/gray"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/tv_register"
+                    android:text="没有帐号？"/>
+
+                <TextView
+                    android:id="@+id/tv_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/large_large"
+                    android:clickable="true"
+                    android:text="快速注册"
+                    android:textColor="@color/text_blue"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
